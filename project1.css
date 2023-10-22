@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-style: italic;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://img.collegepravesh.com/2016/05/IIIT-Bhubaneswar.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav links{
+    flex: 1;
+    text-align: right;
+}
+
+ul li {
+    list-style: none;
+    display:inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+
+ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+    font-style:italic;
+}
+
+ul li::after{
+    content:'';
+    width:0%;
+    height:3px;
+    background: rgb(186, 30, 213);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width:100%;
+}
+
+.textbox{
+    width: 90%;
+    color:white;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-style: italic;
+}
+
+.textbox h1{
+    font-size: 50px;
+}
+
+.textbox p{
+    margin: 40px 0 40px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid;
+    padding:12px 35px;
+    background: transparent;
+    position: relative;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid;
+    background-color:rgb(186, 30, 213);
+    transition:1s;
+}
+
+
+
+.home{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    padding:5%;
+}
+
+.home h1{
+    font-size:40px;
+    font-weight: 600;
+    color:black;
+}
+
+.home p{
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    padding:5%;
+}
+
+.course h1{
+    font-size:40px;
+    font-weight: 600;
+    color:black;
+}
+
+.course p{
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coursecol{
+    flex-basis:5%;
+    background:pink;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px ;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.coursecol:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .textbox h1{
+        font-size:20px;
+    }
+
+    .textbox p{
+        margin: 40px 0 40px;
+        padding: 10px;
+        font-size:15px;
+        text-align: center;
+    }
+    .nav links{
+        position: absolute;
+        background:black ;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right: 0;
+        text-align: left;
+        z-index: 5;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus h1{
+    font-size: 40px;
+}
+.campus p{
+    font-size: 20px;
+}
+
+.campuscol{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position: relative;
+}
+
+.campuscol img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:rgba(244, 239, 239, 0.6) ;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(photos/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta a{
+    color: white;
+    margin-bottom: 40px;
+    padding:10px;
+    margin: 10px;
+
+}
+
+.footer{
+    text-align: center;
+}
+
+.icon.fa{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-facebook{
+    padding: 60px;
+    color:blue;
+}
+
+.fa-instagram{
+    padding: 60px;
+    color:rgb(228, 64, 95);
+}
+
+.fa-github{
+    padding: 60px;
+    color: black;
+}
+
+.fa-linkedin{
+    padding: 60px;
+    color:rgb(10,102,194);
+}
+.fa-heart-o{
+    color:#f44336;
+}
+
+.footer h4{
+    font-size: 29px;
+}
+
+.footer p{
+    font-size: 20px;
+}
