@@ -1,0 +1,1 @@
+# This clone website was built long ago but I just forgot to publish it onto github so I published it on github today. As this was built long ago, I have not worked on its responsiveness. Please visit the website only on desktop.
